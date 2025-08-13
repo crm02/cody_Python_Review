@@ -1,0 +1,9 @@
+def main():
+    user_name=input("What is your name?: ")
+    introduction(user_name)
+
+
+def introduction(user_name):
+    print(f'Hello my name is {user_name}. Its nice to meet you.')
+
+main()

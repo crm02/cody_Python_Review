@@ -1,0 +1,30 @@
+from productionWorker import ProductionWorker
+
+def main():
+    user_name=input("What is your employees name: ")
+    user_id = input ("What is your employees id: ")
+    user_shift = int(input("What is your employees shift: "))
+    user_pay = float(input("What is your employees pay: "))
+
+    employee_1 =ProductionWorker(user_name,user_id,user_shift,user_pay)
+    
+    print(f'Employees name: {employee_1.get_employee_Name()}, Employee number: {employee_1.get_emplyee_Number()}, \
+          EmployeeShift(1 = Day, 2 = Night): {employee_1.get_shiftNum()}, EmployeePay: {employee_1.get_hourlyPay()}')
+
+
+
+main()
+
+
+
+
+
+
+
+
+
+
+    #import animals
+    #cat = animals.Cat()
+    #cat.show_species()
+    #cat.make_sound()
