@@ -1,0 +1,16 @@
+array1 = ["Porsche","Honda","Toyota"]
+print(array1)
+print(array1[1])
+print(len(array1))
+for i in (array1):
+    print(i)
+
+list1={1,2,3,4}
+
+age = input("Age?:")
+
+def introduction(name):
+    print(f'Hello my name is {name}')
+
+name = input("What is your name?")
+introduction(name)
