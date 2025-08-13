@@ -1,0 +1,21 @@
+import sqlite3
+
+def main():
+    conn = sqlite3.connect('contacts.db')
+    cur = conn.cursor()
+
+    sql = '''CREATE TABLE IF NOT EXISTS Immediate_Family (NumID INTEGER PRIMARY KEY NOT NULL,
+    Name TEXT,
+    PhoneNumber TEXT)'''
+
+    cur.execute(sql)
+
+    cur.execute('''INSERT INTO Immediate_Family(Name,PhoneNumber)
+                VALUES('Mom','267-574-2322'),
+                ('Justin','267-357-3040'),
+                ('Storm', '267-886-4288')''')
+
+    conn.commit
+    conn.close
+
+main()

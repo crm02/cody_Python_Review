@@ -1,0 +1,5 @@
+hello = "Hello World"
+number = 47
+floatnum = 47.5
+
+print(hello)
