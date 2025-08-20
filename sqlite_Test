@@ -14,6 +14,13 @@ def main():
                 VALUES('Mom','267-574-2322'),
                 ('Justin','267-357-3040'),
                 ('Storm', '267-886-4288')''')
+    
+    names = '''SELECT Name, PhoneNumber FROM Immediate_Family'''
+    cur.execute(names)
+    # print(cur.fetchone()) 
+    print(cur.fetchall())
+
+    
 
     conn.commit
     conn.close

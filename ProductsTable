@@ -9,7 +9,7 @@ def main():
     cur = conn.cursor()
 
     # Creates our table and columns
-    cur.execute('''CREATE TABLE IF NOT EXISTS Products(ProductID INTEGER PRIMARY KEY, 
+    cur.execute('''CREATE TABLE IF NOT EXISTS Products(ProductID INTEGER PRIMARY KEY NOT NULL, 
                 DESCRIPTION TEXT,
                 UnitCost REAL,
                 RetailPrice REAL,
@@ -27,5 +27,10 @@ def main():
                 ('Hot Chocolate Mix', 5.99, 12.99, 222),
                 ('Semisweet Chocolate Chips', 1.99, 3.99, 163),
                 ('White Chocolate Chips', 1.99, 3.99, 293)''')
+    
+    sql2 = ''''''
+    
+    conn.commit()
+    conn.close()
     
 main()
