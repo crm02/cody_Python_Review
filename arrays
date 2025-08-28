@@ -14,3 +14,13 @@ def introduction(name):
 
 name = input("What is your name?")
 introduction(name)
+
+my_array = [100,2333,44,555,2123,12414515151]
+def minimum_val(array):
+    min_val=array[0]
+    for i in array:
+        if i <min_val:
+            min_val=i
+    return f'The smallest value is {min_val}'
+print(minimum_val(my_array))
+    
