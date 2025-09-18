@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 def main():
     user_name=input("What is your name?: ")
     introduction(user_name)
@@ -6,4 +7,14 @@ def main():
 def introduction(user_name):
     print(f'Hello my name is {user_name}. Its nice to meet you.')
 
+=======
+def main():
+    user_name=input("What is your name?: ")
+    introduction(user_name)
+
+
+def introduction(user_name):
+    print(f'Hello my name is {user_name}. Its nice to meet you.')
+
+>>>>>>> 6a68a7d6a34ef5c823ba316735d7de777dd25180
 main()

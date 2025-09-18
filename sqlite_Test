@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import sqlite3
 
 def main():
@@ -18,4 +19,33 @@ def main():
     conn.commit
     conn.close
 
+=======
+import sqlite3
+
+def main():
+    conn = sqlite3.connect('contacts.db')
+    cur = conn.cursor()
+
+    sql = '''CREATE TABLE IF NOT EXISTS Immediate_Family (NumID INTEGER PRIMARY KEY NOT NULL,
+    Name TEXT,
+    PhoneNumber TEXT)'''
+
+    cur.execute(sql)
+
+    cur.execute('''INSERT INTO Immediate_Family(Name,PhoneNumber)
+                VALUES('Mom','267-574-2322'),
+                ('Justin','267-357-3040'),
+                ('Storm', '267-886-4288')''')
+    
+    names = '''SELECT Name, PhoneNumber FROM Immediate_Family'''
+    cur.execute(names)
+    # print(cur.fetchone()) 
+    print(cur.fetchall())
+
+    
+
+    conn.commit
+    conn.close
+
+>>>>>>> 6a68a7d6a34ef5c823ba316735d7de777dd25180
 main()

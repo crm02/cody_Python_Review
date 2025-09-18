@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Algorithm Workbench
 # 1. Write a function named times_ten. The function should accept an argument and
 # display the product of its argument multiplied times 10.
@@ -10,4 +11,18 @@ def ten_times(num):
     num = num*10
     print(num)
 
+=======
+# Algorithm Workbench
+# 1. Write a function named times_ten. The function should accept an argument and
+# display the product of its argument multiplied times 10.
+
+def main():
+    user_number = float(input("Enter a number: "))
+    ten_times(user_number)
+
+def ten_times(num):
+    num = num*10
+    print(num)
+
+>>>>>>> 6a68a7d6a34ef5c823ba316735d7de777dd25180
 main()

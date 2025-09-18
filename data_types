@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 hello = "Hello World"
 number = 47
 floatnum = 47.5
 
+=======
+hello = "Hello World"
+number = 47
+floatnum = 47.5
+
+>>>>>>> 6a68a7d6a34ef5c823ba316735d7de777dd25180
 print(hello)

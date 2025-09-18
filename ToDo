@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from tkinter import *
 def create_window():
     new_window = Tk()
@@ -6,4 +7,14 @@ window =Tk()
 
 Button(window,text="create new window", command = create_window).pack()
 
+=======
+from tkinter import *
+def create_window():
+    new_window = Tk()
+
+window =Tk()
+
+Button(window,text="create new window", command = create_window).pack()
+
+>>>>>>> 6a68a7d6a34ef5c823ba316735d7de777dd25180
 window.mainloop()

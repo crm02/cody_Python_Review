@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #array1 = ["Porsche","Honda","Toyota"]
 #print(array1)
 #print(array1[1])
@@ -27,3 +28,31 @@ print(multi_array[1][2])
 # multi_array = [1,2,3],
 #               [4,5,6],
 #               [7,8,9]
+=======
+array1 = ["Porsche","Honda","Toyota"]
+print(array1)
+print(array1[1])
+print(len(array1))
+for i in (array1):
+    print(i)
+
+list1={1,2,3,4}
+
+age = input("Age?:")
+
+def introduction(name):
+    print(f'Hello my name is {name}')
+
+name = input("What is your name?")
+introduction(name)
+
+my_array = [100,2333,44,555,2123,12414515151]
+def minimum_val(array):
+    min_val=array[0]
+    for i in array:
+        if i <min_val:
+            min_val=i
+    return f'The smallest value is {min_val}'
+print(minimum_val(my_array))
+    
+>>>>>>> 6a68a7d6a34ef5c823ba316735d7de777dd25180
