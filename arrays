@@ -1,16 +1,29 @@
-array1 = ["Porsche","Honda","Toyota"]
-print(array1)
-print(array1[1])
-print(len(array1))
-for i in (array1):
-    print(i)
+#array1 = ["Porsche","Honda","Toyota"]
+#print(array1)
+#print(array1[1])
+#print(len(array1))
+#for i in (array1):
+#    print(i)
+#
+#list1={1,2,3,4}
+#
+#age = input("Age?:")
+#
+#def introduction(name):
+#    print(f'Hello my name is {name}')
+#
+#name = input("What is your name?")
+#introduction(name)
+#
+#cat = ['fat','black','quiet']
+#size, color, disposition = cat
+#
+##Multi Arrays
 
-list1={1,2,3,4}
-
-age = input("Age?:")
-
-def introduction(name):
-    print(f'Hello my name is {name}')
-
-name = input("What is your name?")
-introduction(name)
+multi_array = [1,2,3],[4,5,6],[7,8,9]
+print(multi_array[2])
+print(multi_array[1][2]) 
+#LINE ABOVE PRINTS 6 BECAUSE multi arrays can call index from rows and columns
+# multi_array = [1,2,3],
+#               [4,5,6],
+#               [7,8,9]

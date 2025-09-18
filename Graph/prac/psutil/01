@@ -1,0 +1,23 @@
+import psutil
+import matplotlib
+print(psutil.cpu_times())
+
+
+
+psutil.cpu_percent(interval = None, percpu =False)
+# Returns a float value the entire system-wide CPU utilization as a percentage.
+# when interval >> 0.0, compares system CPU times elapsed before and agter the interval.
+# when interval is 0.0 or None, compares system CPU times elapsed since last call or module import, returning immediately.
+
+
+# nonblocking,
+#print(psutil.cpu_percent(interval =0.1)) #0.0, or None just retruns 0.0
+
+# blocking
+#print("hello ",psutil.cpu_percent(interval=10))
+
+#per_cpu is if the computer has multiple cpus, 
+forever = True
+
+while forever:
+     print(psutil.cpu_percent(interval =1))
